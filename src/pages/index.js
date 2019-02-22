@@ -1,10 +1,9 @@
 import React from "react";
 import Article from "../components/article";
-import Navbar from "../components/navbar";
+import Layout from "../components/layout";
 
 export default () => (
-  <div>
-    <Navbar />
+  <Layout>
     <h1>Reading List</h1>
     <p>Much component. Very wow</p>
     <Article
@@ -22,5 +21,5 @@ export default () => (
       date="December 28, 2018"
       description="We can admit our knowledge gaps without devaluing our expertise."
     />
-  </div>
+  </Layout>
 );

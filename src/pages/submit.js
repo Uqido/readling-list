@@ -1,11 +1,10 @@
 import React from "react";
 import WorkInProgress from "../components/work-in-progress";
-import Navbar from "../components/navbar";
+import Layout from "../components/layout";
 
 export default () => (
-  <div>
-    <Navbar />
+  <Layout>
     <h1>Submit Article</h1>
     <WorkInProgress />
-  </div>
+  </Layout>
 );
