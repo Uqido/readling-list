@@ -1,8 +1,10 @@
 import React from "react";
 import Article from "../components/article";
+import Navbar from "../components/navbar";
 
 export default () => (
   <div>
+    <Navbar />
     <h1>Reading List</h1>
     <p>Much component. Very wow</p>
     <Article
