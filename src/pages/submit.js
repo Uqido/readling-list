@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 
 export default () => (
   <Layout>
-    <h1>Submit Article</h1>
     <WorkInProgress />
   </Layout>
 );

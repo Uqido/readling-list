@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #d9534f;
+  --primary-color-light: rgb(217, 100, 100);
+}
+
+:global * {
+  box-sizing: border-box;
+}
+
+:global html {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+:global body {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+:global a {
+  color: var(--primary-color);
+}
+:global a:hover {
+  text-decoration: none;
+}
+
+:global p,
+:global pre,
+:global ul,
+:global ol {
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 42rem;
+  padding: 2.625rem 1.3125rem;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-rendering: optimizeLegibility;
+}
+
+.title > a {
+  color: var(--primary-color-light);
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
