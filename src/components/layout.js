@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "gatsby";
 import Navbar from "../components/navbar";
 import styles from "./layout.module.css";
 
 export default ({ children }) => (
   <div className={styles.container}>
-    <div className={styles.header}>
-      <Link to="/">
-        <h3 className={styles.title}>Reading List</h3>
-      </Link>
-      <Navbar />
+    <div className="row flex-center">
+      <div className="text-center">
+        <h1 className="margin-small">Reading List</h1>
+        <h3 className="margin-small">Articles made simple.</h3>
+      </div>
     </div>
+    <Navbar />
     {children}
   </div>
 );
