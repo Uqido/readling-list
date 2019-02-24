@@ -1,3 +1,7 @@
 import React from "react";
 
-export default () => <p>work in progress.</p>;
+export default () => (
+  <div className="row flex-center">
+    <p>work in progress.</p>
+  </div>
+);
