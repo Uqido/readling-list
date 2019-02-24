@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./article.module.css";
-import { Link } from "gatsby";
 
 export default props => (
   <div>
-    <Link to={props.url}>
+    <a href={props.url}>
       <h3 className={styles.title}>{props.title}</h3>
-    </Link>
+    </a>
     <small>{props.date}</small>
+    {props.categories.map((category, index) => (
+      <small key={index}> - {category.name}</small>
+    ))}
     <p className={styles.description}>{props.description}</p>
   </div>
 );
