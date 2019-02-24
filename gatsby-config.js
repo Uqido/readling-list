@@ -32,6 +32,21 @@ module.exports = {
         // Whitelisted routes using glob patterns
         includedRoutes: ["**/posts", "**/categories"]
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "ReadingList: Reading made simple!",
+        short_name: "ReadingList",
+        start_url: "/",
+        background_color: "#d9534f",
+        theme_color: "#d9534f",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: "src/images/icon.png" // This path is relative to the root of the site.
+      }
+    },
+    "gatsby-plugin-offline"
   ]
 };
